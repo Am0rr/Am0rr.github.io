@@ -1,6 +1,6 @@
 :root {
-    --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-mono: 'JetBrains Mono', monospace, Roboto Mono;
+    --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont;
+    --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
     
     --container-max-width: 1050px;
     --radius-sm: 6px;
