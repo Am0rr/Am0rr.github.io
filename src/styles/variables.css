@@ -1,29 +1,14 @@
 :root {
+    color-scheme: dark;
+    
     --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont;
     --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
-    
+
     --container-max-width: 1050px;
     --radius-sm: 6px;
+    --radius: 8px;
     --radius-lg: 12px;
-    
-    --bg-main: #f8fafc;
-    --bg-card: #ffffff;
-    --bg-nav: rgba(248, 250, 252, 0.8);
-    --text-primary: #0f172a;
-    --text-muted: #475569;
-    --accent: #2563eb;
-    --accent-hover: #1d4ed8;
-    --border: #e2e8f0;
-    --tag-bg: #eff6ff;
-    --tag-text: #1e40af;
 
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-
-    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-[data-theme="dark"] {
     --bg-main: #0f172a;
     --bg-card: #1e293b;
     --bg-nav: rgba(15, 23, 42, 0.8);
@@ -37,4 +22,6 @@
 
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
