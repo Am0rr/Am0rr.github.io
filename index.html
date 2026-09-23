@@ -2,12 +2,126 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>am0rr-github-io</title>
+    <title>Portfolio | Junior .NET Backend / Full-Stack Developer</title>
+    
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="stylesheet" href="./src/styles/components.css" />
+    <link rel="stylesheet" href="./src/styles/layout.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+  <header class="header">
+    <nav class="container nav">
+      <a href="#" class="logo">Am0rr</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="container">
+    <section class="hero">
+      <h1 class="hero-title">
+        Building <span class="highlight">clean backends</span> & reliable web applications.
+      </h1>
+      <p class="hero-bio">
+        Third-year Software Engineering student building backend systems with
+        <span class="highlight">C# and .NET</span>. I've led a team of developers on an
+        e-commerce API, shipped full-stack apps with Angular, and worked across
+        Clean Architecture, JWT auth, and PostgreSQL. Currently looking for a
+        Junior .NET Backend / Full-Stack role where I can keep building and learning.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="./cv.pdf" target="_blank" class="btn btn-outline">Download CV</a>
+      </div>
+    </section>
+    
+    <section id="projects" class="section">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Prime-items-api</h3>
+            <p class="project-desc">
+              REST API for catalog and order management, built with a 3-person team. 
+              Designed the Clean N-Tier architecture, implemented JWT auth with refresh tokens 
+              and role-based access, and led development through task breakdown and code reviews.
+            </p>
+            <div class="tags">
+              <span class="tag">.NET 10</span>
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">EF Core</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Docker</span>
+              <span class="tag">JWT</span>
+              <span class="tag">xUnit</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Am0rr/Prime-items-api" target="_blank" rel="noopener">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Todo-app</h3>
+            <p class="project-desc">
+              Full-stack task manager with a .NET backend and Angular frontend. 
+              Features JWT auth with refresh token rotation, RBAC, server-side pagination, 
+              filtering, and real-time search with debounce.
+            </p>
+            <div class="tags">
+              <span class="tag">.NET 10</span>
+              <span class="tag">Angular 19</span>
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">EF Core</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Docker</span>
+              <span class="tag">JWT</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Am0rr/Todo-app" target="_blank" rel="noopener">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Url-shortener-api</h3>
+            <p class="project-desc">
+              Full-stack URL shortener with authentication and role-based access. 
+              Built a layered API/BLL/DAL architecture, JWT auth, ownership rules, 
+              and a reactive Angular UI with live updates and validation.
+            </p>
+            <div class="tags">
+              <span class="tag">.NET 10</span>
+              <span class="tag">Angular 19</span>
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">EF Core</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Docker</span>
+              <span class="tag">JWT</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Am0rr/Url-shortener-api" target="_blank" rel="noopener">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  
+  <script type="module" src="./src/scripts/main.ts"></script>
   </body>
 </html>
