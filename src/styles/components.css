@@ -13,7 +13,7 @@
 
 .btn-primary {
     background-color: var(--accent);
-    color: #ffffff;
+    color: #000000;
     border: 1px solid transparent;
 }
 
@@ -35,6 +35,24 @@
 .btn:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
+}
+
+.btn-cta {
+    justify-self: end;
+    background: var(--accent);
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.btn-cta:hover {
+    background: color-mix(in srgb, var(--accent) 85%, white);
+    transform: translateY(-1px);
 }
 
 /* Hero */
